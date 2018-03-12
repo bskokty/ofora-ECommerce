@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="684da1d5c9d4438b80bd3ad8e8b2e36e" Name="Diagram1">
+        <EntityTypeShape EntityType="ojelerForaModel.basket" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.categories" Width="1.5" PointX="0.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.image" Width="1.5" PointX="5.25" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.order" Width="1.5" PointX="10" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.orderItem" Width="1.5" PointX="12.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.product" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.Slider" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.status" Width="1.5" PointX="7.75" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.stockStatus" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.Token" Width="1.5" PointX="12.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.User" Width="1.5" PointX="10" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ojelerForaModel.userStatus" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
+        <AssociationConnector Association="ojelerForaModel.FK_basket_product" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_product_categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_image_product" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_order_Statu" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_orderItem_order" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_Slider_product" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_stockStatus_product" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_Token_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ojelerForaModel.FK_User_userStatus" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

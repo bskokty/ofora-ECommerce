@@ -1,0 +1,127 @@
+﻿@model ofora.Models.basketİmageViewModel
+@{
+    ViewBag.Title = "basket";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>*@
+<!------ Include the above in your HEAD tag ---------->
+<div class="container">
+@if (ViewBag.mesaj == null)
+{
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Adet</th>
+                        <th class="text-center">Birim Fiyat</th>
+                        <th class="text-center">Total</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.imag)
+                    {
+                        <tr>
+                            <td class="col-sm-8 col-md-6">
+                                <div class="media">
+                                   @{string a = "http://localhost:54254/" + item.folderName;
+                                    <a class="thumbnail pull-left" href="#"> 
+                                    <img class="media-object" src="@a" style="width: 72px; height: 72px;"> </a>}
+                                    <div class="media-body">
+                                        <h4 class="media-heading"><a href="#">@item.product.name</a></h4>
+                                        <h5 class="media-heading">  <a href="#">@item.product.marka</a></h5>
+                                        <span>Stok Durumu : </span><span class="text-success"><strong>Son @item.product.stockStatus Adet</strong></span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="col-sm-1 col-md-1" style="text-align: center">
+                                <input type="text" class="form-control" id="exampleInputEmail1" value="
+                                       @{foreach (var item2 in Model.bask)
+                                           {
+                                               if (item2.pid == item.pid)
+                                               {
+                                            @item2.adet
+                                                   break;
+                                               }
+                                           }
+                                   }">
+                            </td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>@item.product.price</strong></td>
+                            <td class="col-sm-1 col-md-1 text-center"><strong>
+                      
+                                  @{foreach (var item2 in Model.bask)
+                                      {
+                                          if (item2.pid == item.pid)
+                                          {
+                                            @item2.price
+                                              break;
+                                          }
+                                      }
+                                   }
+
+
+                                   </strong></td>
+                            <td class="col-sm-1 col-md-1">
+                                <a href="/Home/remove?id=@item.pid" class="btn btn-danger">
+                                    <span class="glyphicon glyphicon-remove"></span> Sil
+                                </a>
+                            </td>
+                        </tr>
+                                      }
+                 
+              
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Ara Toplam </h5></td>
+                        <td class="text-right"><h5><strong>@Model.x TL</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h5>Kargo</h5></td>
+                        <td class="text-right"><h5><strong>6.00 TL</strong></h5></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td><h3>Total</h3></td>
+                        <td class="text-right"><h3><strong>@{decimal q = 6 + Model.x;
+                            @q
+                            }</strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>   </td>
+                        <td>
+                            <a href="/Home/Index" class="btn btn-default">
+                                <span class="glyphicon glyphicon-shopping-cart"></span> Alışverişe Devam Et
+                            </a>
+                        </td>
+                        <td>
+                          
+                            <a href="/Home/Odeme?id=@Model.basketid" class="btn btn-success">
+                                Ödeme Yap <span class="glyphicon glyphicon-play"></span>
+                                </a>
+                      </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+                            }
+
+    @if (ViewBag.mesaj != null)
+    {
+        <div class="container"><p style="text-align:center;margin-top: 180px;">@ViewBag.mesaj</p></div>
+    }
+</div>

@@ -1,0 +1,85 @@
+﻿@model List<oforadata.Data.Slider>
+<link href="~/css/carousel.css" rel="stylesheet" />
+
+<div id="container">
+
+    <div id="main">
+        <div id="main-inner">
+            <div id="slider">
+                @foreach (var item in Model)
+                {
+                    string a = "http://localhost:54254/" + item.Sliderimage;
+                    <img src="@a" width="1170" height="298" />
+                }
+               
+         
+            </div>
+        </div>
+       
+    </div>
+    </div>
+    <!-- end of #container -->
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/carousell.js"></script>
+    <script>
+        $(function () {
+            $('#slider').miniSlider();
+        });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+
+    @*
+
+        <div class="container--head">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                   @foreach (var item in Model)
+                   {
+                     string a = "http://localhost:54254/" + item.Sliderimage;
+                    <div class="item">
+                        <img src="@a" alt="..." style="width:100%">
+                        <div class="carousel-caption">
+                            <h3>Lorem ipsum dolor</h3> Lorem ipsum dolor sit amet, tharsiam eam est in.
+                        </div>
+                    </div>
+
+                           }
+
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Fontawesome -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>*@

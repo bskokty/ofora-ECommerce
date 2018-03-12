@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ojelerForaModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="products" Relationship="Self.FK_product_categories" FromRole="categories" ToRole="product" />
+    <NavigationProperty Name="Sliders" Relationship="ojelerForaModel1.FK_Slider_categories" FromRole="category" ToRole="Slider" />
+  </EntityType>
+  <EntityType Name="image">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="folderName" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="product" Relationship="Self.FK_image_product" FromRole="image" ToRole="product" />
+    <Property Name="folderName1" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="folderName2" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="status" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="status1" Relationship="Self.FK_order_Statu" FromRole="order" ToRole="status" />
+    <NavigationProperty Name="orderItems" Relationship="ojelerForaModel1.FK_orderItem_order" FromRole="order" ToRole="orderItem" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="price" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="desciption" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="smdesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="stockStatus" Type="Int32" Nullable="false" />
+    <Property Name="cId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="category" Relationship="Self.FK_product_categories" FromRole="product" ToRole="categories" />
+    <NavigationProperty Name="images" Relationship="Self.FK_image_product" FromRole="product" ToRole="image" />
+    <NavigationProperty Name="stockStatus1" Relationship="Self.FK_stockStatus_product" FromRole="product" ToRole="stockStatus" />
+    <Property Name="marka" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="baskets" Relationship="ojelerForaModel1.FK_basket_product" FromRole="product" ToRole="basket" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="status1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="orders" Relationship="Self.FK_order_Statu" FromRole="status" ToRole="order" />
+  </EntityType>
+  <EntityType Name="stockStatu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="product" Relationship="Self.FK_stockStatus_product" FromRole="stockStatus" ToRole="product" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Token">
+    <Key>
+      <PropertyRef Name="tID" />
+    </Key>
+    <Property Name="tID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tokentext" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="endate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="userId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="ojelerForaModel1.FK_Token_User" FromRole="Token" ToRole="User" />
+  </EntityType>
+  <EntityType Name="userStatu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Users" Relationship="ojelerForaModel1.FK_User_userStatus" FromRole="userStatu" ToRole="User" />
+  </EntityType>
+  <Association Name="FK_product_categories">
+    <End Role="categories" Type="Self.category" Multiplicity="1" />
+    <End Role="product" Type="Self.product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="product">
+        <PropertyRef Name="cId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_image_product">
+    <End Role="product" Type="Self.product" Multiplicity="1" />
+    <End Role="image" Type="Self.image" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="image">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_order_Statu">
+    <End Role="status" Type="Self.status" Multiplicity="1" />
+    <End Role="order" Type="Self.order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="order">
+        <PropertyRef Name="status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_stockStatus_product">
+    <End Role="product" Type="Self.product" Multiplicity="1" />
+    <End Role="stockStatus" Type="Self.stockStatu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="stockStatus">
+        <PropertyRef Name="pId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ojelerForaEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="images" EntityType="Self.image" />
+    <EntitySet Name="orders" EntityType="Self.order" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="status" EntityType="Self.status" />
+    <EntitySet Name="stockStatus" EntityType="Self.stockStatu" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tokens" EntityType="Self.Token" />
+    <EntitySet Name="userStatus" EntityType="Self.userStatu" />
+    <AssociationSet Name="FK_product_categories" Association="Self.FK_product_categories">
+      <End Role="categories" EntitySet="categories" />
+      <End Role="product" EntitySet="products" />
+    </AssociationSet>
+    <AssociationSet Name="FK_image_product" Association="Self.FK_image_product">
+      <End Role="product" EntitySet="products" />
+      <End Role="image" EntitySet="images" />
+    </AssociationSet>
+    <AssociationSet Name="FK_order_Statu" Association="Self.FK_order_Statu">
+      <End Role="status" EntitySet="status" />
+      <End Role="order" EntitySet="orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_stockStatus_product" Association="Self.FK_stockStatus_product">
+      <End Role="product" EntitySet="products" />
+      <End Role="stockStatus" EntitySet="stockStatus" />
+    </AssociationSet>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ojelerForaModel1.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ojelerForaModel1.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <EntitySet Name="Users" EntityType="ojelerForaModel1.User" />
+    <AssociationSet Name="FK_Token_User" Association="ojelerForaModel1.FK_Token_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Token" EntitySet="Tokens" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_userStatus" Association="ojelerForaModel1.FK_User_userStatus">
+      <End Role="userStatu" EntitySet="userStatus" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <EntitySet Name="Sliders" EntityType="ojelerForaModel1.Slider" />
+    <AssociationSet Name="FK_Slider_categories" Association="ojelerForaModel1.FK_Slider_categories">
+      <End Role="category" EntitySet="categories" />
+      <End Role="Slider" EntitySet="Sliders" />
+    </AssociationSet>
+    <EntitySet Name="baskets" EntityType="ojelerForaModel1.basket" />
+    <AssociationSet Name="FK_basket_product" Association="ojelerForaModel1.FK_basket_product">
+      <End Role="product" EntitySet="products" />
+      <End Role="basket" EntitySet="baskets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_basket_User" Association="ojelerForaModel1.FK_basket_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="basket" EntitySet="baskets" />
+    </AssociationSet>
+    <EntitySet Name="orderItems" EntityType="ojelerForaModel1.orderItem" />
+    <AssociationSet Name="FK_orderItem_order" Association="ojelerForaModel1.FK_orderItem_order">
+      <End Role="order" EntitySet="orders" />
+      <End Role="orderItem" EntitySet="orderItems" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ustatus" Type="Int32" Nullable="false" />
+    <Property Name="onayDurumu" Type="Int32" />
+    <NavigationProperty Name="Tokens" Relationship="ojelerForaModel1.FK_Token_User" FromRole="User" ToRole="Token" />
+    <NavigationProperty Name="userStatu" Relationship="ojelerForaModel1.FK_User_userStatus" FromRole="User" ToRole="userStatu" />
+    <NavigationProperty Name="baskets" Relationship="ojelerForaModel1.FK_basket_User" FromRole="User" ToRole="basket" />
+  </EntityType>
+  <Association Name="FK_Token_User">
+    <End Type="ojelerForaModel1.User" Role="User" Multiplicity="1" />
+    <End Type="ojelerForaModel1.Token" Role="Token" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Token">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_userStatus">
+    <End Type="ojelerForaModel1.userStatu" Role="userStatu" Multiplicity="1" />
+    <End Type="ojelerForaModel1.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="userStatu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="ustatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Sliderimage" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Yazi" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="cId" Type="Int32" />
+    <NavigationProperty Name="category" Relationship="ojelerForaModel1.FK_Slider_categories" FromRole="Slider" ToRole="category" />
+  </EntityType>
+  <Association Name="FK_Slider_categories">
+    <End Type="ojelerForaModel1.category" Role="category" Multiplicity="0..1" />
+    <End Type="ojelerForaModel1.Slider" Role="Slider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Slider">
+        <PropertyRef Name="cId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="basket">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="uid" Type="Int32" Nullable="false" />
+    <Property Name="date" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="price" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="basketId" Type="Int32" Nullable="false" />
+    <Property Name="onay" Type="Int32" />
+    <Property Name="adet" Type="Int32" />
+    <NavigationProperty Name="product" Relationship="ojelerForaModel1.FK_basket_product" FromRole="basket" ToRole="product" />
+    <NavigationProperty Name="User" Relationship="ojelerForaModel1.FK_basket_User" FromRole="basket" ToRole="User" />
+    <Property Name="odeme" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_basket_product">
+    <End Type="ojelerForaModel1.product" Role="product" Multiplicity="1" />
+    <End Type="ojelerForaModel1.basket" Role="basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="pid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_basket_User">
+    <End Type="ojelerForaModel1.User" Role="User" Multiplicity="1" />
+    <End Type="ojelerForaModel1.basket" Role="basket" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="basket">
+        <PropertyRef Name="uid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="orderItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="oid" Type="Int32" Nullable="false" />
+    <Property Name="pid" Type="Int32" Nullable="false" />
+    <Property Name="piece" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="order" Relationship="ojelerForaModel1.FK_orderItem_order" FromRole="orderItem" ToRole="order" />
+  </EntityType>
+  <Association Name="FK_orderItem_order">
+    <End Type="ojelerForaModel1.order" Role="order" Multiplicity="1" />
+    <End Type="ojelerForaModel1.orderItem" Role="orderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="order">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="orderItem">
+        <PropertyRef Name="oid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,57 @@
+﻿@model List<oforadata.Data.Slider>
+@{
+    ViewBag.Title = "Slider";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("Yeni Slider Ekle", "Create", "", new { @class = "btn btn-success sagkenar" })
+@section pagecss{
+<style>
+           .boyut{
+            width:25%;
+            height:15%;
+        }
+</style>
+}
+@section pageScripts{
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(2);
+        });
+
+    </script>
+}
+<table class="table table-striped">
+    <thead>
+        <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col" width="30%">Ürün Adı</th>
+            <th scope="col" width="30%">Slider</th>
+
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">-</th>
+                <td>@item.category.name</td>
+                <td>
+                    @{ string src = "/" + item.Sliderimage; }
+                    <img src="@src" class="boyut"/>
+                </td>
+
+                <td>@Html.ActionLink("Güncelle", "Edit", new { id = @item.Id }) | | @Html.ActionLink("Sil", "Delete", new { id = @item.Id })</td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>

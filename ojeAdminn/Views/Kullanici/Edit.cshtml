@@ -1,0 +1,88 @@
+﻿@model oforadata.Data.User
+
+@{
+    ViewBag.Title = "Onayla";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section pagecss
+    {
+    <style>
+        .row {
+            margin-top: 1%;
+        }
+
+        .textstop {
+            width: 500px;
+            height: 35px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .boyut {
+            width: 35%;
+            height: 10%;
+        }
+
+        .sagKenar {
+          
+            float: right;
+        }
+    </style>
+}
+@section pageScripts{
+    <script>
+
+
+
+        $(function () {
+
+            setactive(3);
+        });
+
+    </script>
+}
+<p style="font-size:small;color:#dc3545">
+    <i class="fa fa-angle-double-left"></i>@Html.ActionLink("Listeye Dön", "Index", "", new { style = "font-size:small;color:#dc3545" })
+</p>
+<div class="col-lg-10 ">
+    <form action="Edit" method="post">
+        @Html.HiddenFor(model => model.Id)
+        <dl class="row">
+            <dt class="col-lg-2 ">
+                <label style="float:right"><b>Kullanıcı Adı :</b></label>
+            </dt>
+
+            <dd class="col-lg-10">
+                @Html.DisplayFor(model => model.userName)
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-lg-2 ">
+                <label style="float:right"><b>Onay Durumu :</b></label>
+            </dt>
+
+            <dd class="col-lg-2">
+                <select id="basliksec" name="basliksec" style="width:100%">
+                    <option @(Model.ustatus == 1 ? "selected" : " ") value="1">Onaylandı</option>
+                    <option @(Model.ustatus == 2 ? "selected" : " ") value="2">Onaylanmadı</option>
+
+                </select>
+
+            </dd>
+        </dl>
+        <dl class="row">
+            <dt class="col-lg-2 ">
+
+            </dt>
+
+            <dd class="col-lg-10">
+
+                <input type="submit" value="Güncelle" class="btn btn-success" /> || @Html.ActionLink("Back to List", "Index", "Kullanici")
+            </dd>
+
+        </dl>
+   </form>
+</div>
+

@@ -1,0 +1,101 @@
+﻿@model ojeAdminn.Models.BasketViewModel
+
+@{
+    ViewBag.Title = "Sepeti Onayla";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section pagecss
+    {
+    <style>
+        .row {
+            margin-top: 1%;
+        }
+
+        .textstop {
+            width: 500px;
+            height: 35px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .boyut {
+            width: 35%;
+            height: 10%;
+        }
+
+        .sagKenar {
+            float: right;
+        }
+    </style>
+}
+@section pageScripts{
+    <script>
+
+
+
+        $(function () {
+
+            setactive(5);
+        });
+
+    </script>
+    }
+<p style="font-size:small;color:#dc3545">
+    <i class="fa fa-angle-double-left"></i>@Html.ActionLink("Listeye Dön", "Index", "", new { style = "font-size:small;color:#dc3545" })
+    <div class="col-lg-10 ">
+
+        <form action="Edit" method="post">
+            @Html.HiddenFor(model => model.idd)
+            <dl class="row">
+                <dt class="col-lg-2 ">
+                    <label style="float:right"><b>Kullanıcı Adı :</b></label>
+                </dt>
+                <dd class="col-lg-10">
+                    @Html.DisplayFor(model => model.ad)
+                </dd>
+
+                <dt class="col-lg-2 ">
+                    <label style="float:right"><b>Toplam Tutar :</b></label>
+                </dt>
+                <dd class="col-lg-10">
+                    @Html.DisplayFor(model => model.fiyat) TL
+                </dd>
+
+                <dt class="col-lg-2 ">
+                    <label style="float:right"><b>Ürünler :</b></label>
+                </dt>
+
+                <dd class="col-lg-10">
+                    @foreach (var item in Model.baskk)
+                    {
+                        @Html.DisplayFor(model => item.product.name)<br/>
+                    }
+
+                </dd>
+                <dt class="col-lg-2 ">
+                    <label style="float:right"><b>Onay Durumu :</b></label>
+                </dt>
+
+                <dd class="col-lg-10">
+                    <select id="basliksec" name="basliksec" style="width:20%">
+                        <option value="1">Onaylandı</option>
+                        <option value="2">Onaylanmadı</option>
+
+                    </select>
+                 </dd>
+                <dt class="col-lg-2 ">
+
+                </dt>
+
+                <dd class="col-lg-10">
+
+                    <input type="submit" value="Güncelle" class="btn btn-success" /> 
+                </dd>
+
+</dl>
+            </form>
+</div>
+
+

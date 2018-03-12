@@ -1,0 +1,45 @@
+﻿@model List<oforadata.Data.product>
+@{
+    ViewBag.Title = "Ürünler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("Yeni Ürün Ekle", "Create", "", new { @class = "btn btn-success sagkenar" })
+@section pageScripts{
+
+    <script>
+        $(function () {
+
+            setactive(1);
+        });
+</script>
+    }
+
+<table class="table table-striped">
+    <thead>
+        <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col" width="30%">Adı</th>
+            <th scope="col" width="30%">Kısa Açıklama</th>
+            <th scope="col">Fiyat</th>
+            <th scope="col">Kategori</th>
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">-</th>
+                <td>@item.name</td>
+                <td>@item.smdesc</td>
+                <td>@item.price</td>
+                <td>@item.category.name</td>
+                <td>@Html.ActionLink("Güncelle", "Edit", new { id = @item.Id }) | | @Html.ActionLink("Sil", "Delete", new { id = @item.Id })</td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>

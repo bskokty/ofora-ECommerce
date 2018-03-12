@@ -1,0 +1,113 @@
+﻿@model  List<oforadata.Data.product>
+@{
+
+    ViewBag.Title = "Stok Durumu-> ";
+    ViewBag.altbaslik = "Ekle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section pagecss{
+    <style>
+        .row {
+            margin-top: 1%;
+        }
+
+        .textstop {
+            width: 500px;
+            height: 35px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /*.boyut{
+            width:35%;
+            height:35%;
+        }*/
+        .sagKenar {
+            float: right;
+        }
+    </style>
+}
+@section pageScripts{
+    <script>
+
+
+
+        $(function () {
+
+            setactive(4);
+        });
+
+    </script>
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>
+
+        CKEDITOR.replace("editor1");
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(4);
+        });
+
+    </script>
+
+
+}
+@Html.ActionLink("<-Listeye Geri Dön", "Index", "", new { @class = "btn btn-secondary" })
+
+@*<div class="row">*@
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+
+    
+            <form id="demo-form2" method="post" enctype="multipart/form-data" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+                            <label class="control-label sagKenar"><b>Eklenecek Ürün : </b></label>
+                        </div>
+
+                        <div class="col-md-5">
+
+                            <select id="urunsec" name="urunsec" style="width:100%">
+
+                                <option value="-1">Lütfen bir kategori seçiniz.</option>
+                                @foreach (var item in Model)
+                                {
+                                    <option value="@item.Id">@item.name</option>
+
+                                }
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label class="control-label"><b> </b></label>
+                        </div>
+                        <div class="col-md-5">
+                            <input type="submit" value="Ekle" class="btn btn-primary sagKenar" />
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>

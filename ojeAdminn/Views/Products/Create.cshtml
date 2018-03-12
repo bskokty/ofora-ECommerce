@@ -1,0 +1,291 @@
+﻿@model  ojeAdminn.Models.ProductCategoryViewModel
+
+@{
+
+    ViewBag.Title = "Ürünler-> ";
+    if (ViewBag.mesaj == null)
+    {
+        ViewBag.altbaslik = "Ekle";
+    }
+    else
+    {
+        ViewBag.altbaslik = "Güncelle";
+    }
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section pagecss
+    {
+    <style>
+        .row {
+            margin-top: 1%;
+        }
+
+        .textstop {
+            width: 500px;
+            height: 35px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+          /*.boyut{
+            width:35%;
+            height:35%;
+        }*/
+        .sagKenar {
+            float: right;
+        }
+    </style>
+}
+@section pageScripts{
+    <script>
+
+        $(function () {
+
+            setactive(1);
+        });
+
+    </script>
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>
+
+        CKEDITOR.replace("editor1");
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+
+
+}
+<p style="font-size:small;color:#dc3545">
+    <i class="fa fa-angle-double-left"></i>@Html.ActionLink("Listeye Dön", "Index", "", new { style = "font-size:small;color:#dc3545" })
+</p>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+
+            <div class="x_content">
+                <br>
+                <form id="demo-form2" method="post" enctype="multipart/form-data" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+
+
+                    <div class="form-horizontal">
+
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.Id)
+                        @if (ViewBag.mesaj == null)
+                        {
+
+                            <div class="row">
+                                <div class="col-md-2"><label class="control-label ">
+                                    <b>Ürün Görseli :</b>
+                                </label>
+                            </div>
+                                <div class="col-md-8 col-sm-6 col-xs-12">
+                                    <input type="file" name="pic" />
+
+
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        <b>Ürün Görseli :</b>
+                                    </label>
+                                </div>
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+                                        <input type="file" name="pic2" />
+
+
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        <b>Ürün Görseli :</b>
+                                    </label>
+                                </div>
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+                                        <input type="file" name="pic3" />
+
+
+                                    </div>
+                                </div>
+                         }
+                       @if (ViewBag.mesaj != null)
+                       {
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        <b>Ürün Görseli :</b>
+                                    </label>
+                                </div>
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+
+                                        <input type="file" name="pic" />
+                            @if (Model.imge != null && Model.imge.folderName != null)
+                            {   string a = "/" + Model.imge.folderName;
+                                <img src="@a" class="boyut" />
+                            }
+                             
+                           
+                                    </div>
+                                </div>
+
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        <b>Ürün Görseli :</b>
+                                    </label>
+                                </div>
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+                                        <input type="file" name="pic2" />
+                                        @if (Model.imge != null && Model.imge.folderName1 != null)
+                                        {
+                                            string a = "/" + Model.imge.folderName1;
+                                            <img src="@a" class="boyut" />
+                                        }
+                                        
+
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label class="control-label">
+                                        <b>Ürün Görseli :</b>
+                                    </label>
+                                </div>
+                                    <div class="col-md-8 col-sm-6 col-xs-12">
+                                        <input type="file" name="pic3" />
+                                        @if (Model.imge != null && Model.imge.folderName2 != null)
+                                        {
+                                            string a = "/" + Model.imge.folderName2;
+                                            <img src="@a" class="boyut" />
+                                        }
+                                        
+
+                                    </div>
+                                </div>
+                        }
+
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="control-label"><b>Adı : </b></label>
+                            </div>
+
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.prod.name, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.prod.name, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="control-label"><b>Açıklama : </b></label>
+                            </div>
+
+                                <div class="col-md-8">
+                                    @Html.TextAreaFor(model => model.prod.desciption, new { htmlAttributes = new { @class = "form-control" }, @style = "width:100%" })
+                                    @Html.ValidationMessageFor(model => model.prod.desciption, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="control-label"><b>Kısa Açıklama : </b></label>
+                            </div>
+
+                                <div class="col-md-8">
+                                    @Html.TextAreaFor(model => model.prod.smdesc, new { htmlAttributes = new { @class = "form-control"}, @style = "width:100%" })
+                                    @Html.ValidationMessageFor(model => model.prod.smdesc, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="control-label"><b>Fiyat : </b></label>
+                            </div>
+
+                                <div class="col-md-8">
+                                    @Html.EditorFor(model => model.prod.price, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.prod.price, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                    
+
+
+                        <div class="row">
+                         @if (ViewBag.mesaj == null)
+                         {<div class="col-md-2">
+                                <label class="control-label"><b>Kategori : </b></label>
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <select id="basliksec" name="basliksec">
+
+                                    <option value="-1">Lütfen bir kategori seçiniz.</option>
+                                    @foreach (var item in Model.categoryy)
+                                    {
+                                        <option value="@item.Id">@item.name</option>
+
+                                    }
+                                </select>
+                            </div>
+                         }
+                         else
+                         {
+                            <div class="col-md-2">
+                                <label class="control-label"><b>Kategori : </b></label>
+                            </div>
+
+                            <div class="col-md-8">
+
+                                <select id="basliksec" name="basliksec">
+
+                                    <option value="-1">Lütfen bir kategori seçiniz.</option>
+                                    @foreach (var item in Model.categoryy)
+                                    {
+                                        <option @(item.Id == Model.cId ? "selected" : " ") value="@item.Id">@item.name</option>
+
+                                    }
+                                </select>
+                            </div>
+                         }
+
+                            </div>
+                        <div class="row">
+                            <div class="col-md-2">    </div>
+                                <div class="col-md-offset-2 col-md-8">
+                                    @if (ViewBag.mesaj == null)
+                                    {
+                                        <input type="submit" value="Ekle" class="btn btn-primary sagKenar" />
+                                    }
+                                    else
+                                    {
+                                        <input type="submit" value="Güncelle" class="btn btn-primary sagKenar" />
+                                    }
+                                    
+
+
+                                </div>
+                            <div class="col-md-offset-2 col-md-10">
+                                @Html.ActionLink("Listeye Geri Dön", "Index", "Products", "", new { @class = " sagKenar" })
+                            </div>
+                            </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,53 @@
+﻿@model List<oforadata.Data.User>
+@{
+    ViewBag.Title = "Kullanıcılar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section pageScripts{
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(3);
+        });
+
+    </script>
+}
+<table class="table table-striped">
+    <thead>
+        <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col" width="30%">Kullanıcı</th>
+            <th scope="col" width="30%">Onay Durumu</th>
+
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">-</th>
+                <td>@item.userName</td>
+                <td>@if (item.onayDurumu == 1)
+                {
+                    <p>"Onaylandı"</p>
+                }
+                else
+                {
+                    <p>"Onaylanmadı"</p>
+                    
+                }</td>
+               
+                <td>@Html.ActionLink("Güncelle", "Edit", new { id = @item.Id }) | | @Html.ActionLink("Sil", "Delete", new { id = @item.Id })</td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>

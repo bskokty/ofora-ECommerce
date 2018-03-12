@@ -1,0 +1,148 @@
+﻿@model  List<oforadata.Data.product>
+
+@{
+
+    ViewBag.Title = "Slider-> ";
+    ViewBag.altbaslik = "Ekle";
+
+    
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section pagecss
+    {
+    <style>
+        .row {
+            margin-top: 1%;
+        }
+
+        .textstop {
+            width: 500px;
+            height: 35px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .boyut{
+            width:35%;
+            height:35%;
+        }
+        .sagKenar {
+            margin-top: 8px;
+            float: right;
+        }
+    </style>
+}
+@section pageScripts{
+    <script>
+
+
+
+        $(function () {
+
+            setactive(2);
+        });
+
+    </script>
+    <script src="~/ckeditor/ckeditor.js"></script>
+
+    <script>
+
+        CKEDITOR.replace("editor1");
+    </script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="~/Scripts/jquery-3.2.1.min.js"></script>
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(2);
+        });
+
+    </script>
+
+}
+
+<p style="font-size:small;color:#dc3545">
+    <i class="fa fa-angle-double-left"></i>@Html.ActionLink("Listeye Dön", "Index", "", new { style = "font-size:small;color:#dc3545" })
+</p>
+<form id="demo-form2" method="post" enctype="multipart/form-data" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+    <div class="form-horizontal">
+      
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @*@Html.HiddenFor(model => model.Id)*@
+
+   
+            <div class="form-group col-md-8">
+                <div class="col-md-3 ">
+                    <label class="control-label sagKenar">
+                        <b>Slider :</b>
+                    </label>
+                </div>
+                <div class="col-md-9">
+                    <input type="file" name="pic" />
+                    @*@if (Model != null)
+                        {
+                            string a = "/" + Model.Sliderimage;
+                            <img src="@a" class="boyut" />
+                        }*@
+
+                </div>
+            </div>
+
+            <div class="form-group col-md-8">
+                <div class="col-md-3 ">
+                    <label class="control-label sagKenar">
+                        <b>Ürün Adı : </b>
+                    </label>
+                </div>
+                <div class="col-md-9">
+                    <select id="basliksec" name="basliksec" style="width:100%">
+
+                        <option value="-1">Lütfen bir ürün seçiniz.</option>
+                        @foreach (var item in Model)
+                        {
+                            <option value="@item.Id">@item.name</option>
+
+                        }
+                    </select>
+                </div>
+            </div>
+            <div class="form-group col-md-8">
+                <div class="col-md-3 ">
+                    <label class="control-label sagKenar">
+                        <b>Slider Yazısı : </b>
+                    </label>
+                </div>
+                <div class="col-md-9">
+                    @Html.TextArea("Yazi", new { style="width:100%" } )
+
+
+
+                </div>
+
+            </div>
+
+            <div class="form-group col-md-8">
+                <div class="col-md-3 ">
+
+                </div>
+
+                <div class="col-md-9">
+                    @if (ViewBag.mesaj == null)
+                {
+                <button type="submit" class="btn btn-primary sagKenar" id="buton">Ekle</button>
+                }
+                else
+                {
+                <button type="submit" class="btn btn-primary sagKenar" id="buton">Güncelle</button>
+                }
+                </div>
+            </div>
+        </div>
+
+</form>

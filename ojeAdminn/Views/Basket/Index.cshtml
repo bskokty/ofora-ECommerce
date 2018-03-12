@@ -1,0 +1,61 @@
+﻿@model List<oforadata.Data.basket>
+@{
+    ViewBag.Title = "Kullanıcı Sepeti";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section pageScripts
+    {
+
+    <script>
+
+        $(function () {
+
+            setactive(5);
+        });
+
+    </script>
+    }
+
+<table class="table table-striped">
+    <thead>
+        <tr class="table-success">
+            <th scope="col">#</th>
+   
+            <th scope="col" >Sepet No</th>
+            <th scope="col" >Tarih</th>
+  
+            <th scope="col" >Onay Durumu</th>
+
+            <th scope="col"></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">-</th>
+              
+                <td>@item.basketId</td>
+                <td>@item.date</td>
+                
+                <td>
+                    @if (item.onay == 1)
+                     {
+                    <p>Onaylandı</p>
+                     }
+                    else
+                    {
+                        <p>Onaylanmadı</p>
+
+                    }
+            </td>
+
+               <td>@Html.ActionLink("Güncelle", "Edit", new { id = @item.id }) || @Html.ActionLink("Sil", "Delete", new { id = @item.id })</td>
+
+            </tr>
+         }
+
+
+    </tbody>
+</table>

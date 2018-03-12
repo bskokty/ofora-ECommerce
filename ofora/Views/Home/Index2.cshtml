@@ -1,0 +1,175 @@
+﻿@model ofora.Models.CategoryProductViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section pageScripts{
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(0);
+        });
+
+    </script>
+}
+
+@Html.Action("Slider", "Home")
+<section>
+    <div class="container">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-sm-3">
+                @Html.Action("Category", "Home")
+            </div>
+
+            <div class="col-sm-9 padding-right">
+
+
+                <div class="features_items">
+                    <!--features_items-->
+                    <h2 class="title text-center"></h2>
+                    @foreach (var item in Model.img)
+                    {
+                        <div class="col-sm-3">
+                            <div class="product-image-wrapper">
+                                <div class="single-products" style="height: 320px;">
+                                    <div class="productinfo text-center">
+
+                                        @{string a = "http://localhost:54254/" + item.folderName;
+                                            <img src="@a" alt="" />}
+
+
+                                        <h2>@item.product.price</h2>
+                                        <p>@item.product.name</p>
+
+                                    </div>
+                                    <div class="product-overlay">
+                                        <div class="overlay-content">
+                                            <h2>@item.product.price</h2>
+                                            <p>@item.product.name</p>
+                                            <a href="/Home/Detail?id=@item.id" class="btn btn-default add-to-cart"><i class="fa fa-search-plus"></i>İncele</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="choose" style="height:105px;">
+                                    <ul class="nav nav-pills nav-justified">
+                                        <li><a href="#"><i class="fa fa-plus-square"></i>@item.product.smdesc</a></li>
+                                        <li><a href="#"><i class="fa fa-plus-square"></i>@item.product.price  TL</a></li>
+                                    </ul>
+
+                                </div>
+                                <div class="choose text-center">
+                                    @if (ViewBag.kullanici != null)
+                                    {
+                                        <a href="/Home/Spet?id=@item.product.Id" class="btn btn-default add-to-cart" style="background:#fe9913"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>}
+                                    @if (ViewBag.kullanici == null)
+                                    {
+                                        <a href="/Home/login" class="btn btn-default add-to-cart" style="background:#fe9913;margin-bottom: -3px;"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a><br />
+                                        <p><small style="font-size:65%;">Önce Giriş Yapmanız gerekir</small></p>}
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                                            }
+                </div><!--features_items-->
+                <div class="recommended_items">
+
+                    <!--recommended_items-->
+                    <h2 class="title text-center">Tercih Edilen Ürünler</h2>
+
+                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                @foreach (var item in Model.img2)
+                                {
+                                    <div class="col-sm-4">
+                                        <div class="product-image-wrapper">
+                                            <div class="single-products">
+                                                <div class="productinfo text-center">
+                                                    <div style="height:170px">
+                                                        @{string w = "http://localhost:54254/" + item.folderName;
+                                                            <img src="@w" alt="" style="width:35%;height:35%;" />}
+                                                        <h2>@item.product.price</h2>
+                                                        <p>@item.product.name</p>
+                                                    </div>
+                                                    <div>
+                                                        @if (ViewBag.kullanici != null)
+                                                        {
+                                                            <a href="/Home/Spet?id=@item.product.Id" class="btn btn-default add-to-cart" style="background:#fe9913"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>}
+                                                        @if (ViewBag.kullanici == null)
+                                                        {
+                                                            <a href="/Home/login" class="btn btn-default add-to-cart" style="background:#fe9913;margin-bottom: -3px;"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a><br />
+                                                            <p><small style="font-size:65%;">Önce Giriş Yapmanız gerekir</small></p>}
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            }
+
+
+                            </div>
+                            <div class="item">
+                                @foreach (var item in Model.img2)
+                                {
+                                    <div class="col-sm-4">
+                                        <div class="product-image-wrapper">
+                                            <div class="single-products">
+                                                <div class="productinfo text-center">
+                                                    <div style="height:170px">
+                                                        @{string w = "http://localhost:54254/" + item.folderName;
+                                                            <img src="@w" alt="" style="width:35%;height:35%;" />}
+                                                        <h2>@item.product.price</h2>
+                                                        <p>@item.product.name</p>
+                                                    </div>
+                                                    <div>
+                                                        @if (ViewBag.kullanici != null)
+                                                        {
+                                                            <a href="/Home/Spet?id=@item.product.Id" class="btn btn-default add-to-cart" style="background:#fe9913"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a>}
+                                                        @if (ViewBag.kullanici == null)
+                                                        {
+                                                            <a href="/Home/login" class="btn btn-default add-to-cart" style="background:#fe9913;margin-bottom: -3px;"><i class="fa fa-shopping-cart"></i>Sepete Ekle</a><br />
+                                                            <p><small style="font-size:65%;">Önce Giriş Yapmanız gerekir</small></p>}
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            }
+                                @*<div class="col-sm-4">
+                        <div class="product-image-wrapper">
+                            <div class="single-products">
+                                <div class="productinfo text-center">
+                                    <img src="images/home/recommend1.jpg" alt="" />
+                                    <h2>$56</h2>
+                                    <p>Easy Polo Black Edition</p>
+                                    <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>*@
+
+                            </div>
+                        </div>
+                        <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div><!--/recommended_items-->
+
+            </div>
+        </div>
+    </div>
+</section>

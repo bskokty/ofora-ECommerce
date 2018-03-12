@@ -1,0 +1,44 @@
+﻿@model List<oforadata.Data.product>
+@{
+    ViewBag.Title = "Kategoriler";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@Html.ActionLink("Stoğa Ürün Ekle", "Create", "", new { @class = "btn btn-success sagkenar" })
+@section pagecss
+    {
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(4);
+        });
+
+    </script>
+}
+<table class="table table-striped">
+    <thead>
+        <tr class="table-success">
+            <th scope="col">#</th>
+            <th scope="col">Adı</th>
+            <th scope="col">Adet</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">-</th>
+                <td>@item.name</td>
+                <td>@item.stockStatus</td>
+                <td>@Html.ActionLink("Sil", "Delete", new { id = @item.Id })</td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>

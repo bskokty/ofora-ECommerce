@@ -1,0 +1,242 @@
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\ApplicationInsights.config
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\csc.exe
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\vbc.exe
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\ojelerfora.dll.config
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\ojelerfora.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\ojelerfora.pdb
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Helpers.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Mvc.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Razor.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Razor.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Helpers.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\bin\System.Web.Mvc.xml
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\obj\Debug\ojelerfora.csprojResolveAssemblyReference.cache
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\obj\Debug\ojelerfora.dll
+C:\Users\bsk\Desktop\Özlem Yilmaz\oylmz\ojelerfora\ojelerfora\obj\Debug\ojelerfora.pdb
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\ApplicationInsights.config
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\csc.exe
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\vbc.exe
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\ojelerfora.dll.config
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\ojelerfora.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\ojelerfora.pdb
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Helpers.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Mvc.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Razor.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Razor.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Helpers.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\bin\System.Web.Mvc.xml
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\obj\Debug\ojelerfora.csprojResolveAssemblyReference.cache
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\obj\Debug\ojelerfora.dll
+C:\Users\ARIBILGI\Desktop\ojelerfora\ojelerfora\obj\Debug\ojelerfora.pdb
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ApplicationInsights.config
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csc.exe
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\vbc.exe
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.dll.config
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.pdb
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Helpers.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Mvc.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Razor.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Razor.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Helpers.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Mvc.xml
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.csprojResolveAssemblyReference.cache
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.dll
+C:\Users\bsk\Desktop\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.pdb
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ApplicationInsights.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csc.exe
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Collections.Immutable.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Reflection.Metadata.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\vbc.exe
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\VBCSCompiler.exe.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.dll.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\ojelerfora.pdb
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.ApplicationInsights.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.Web.Infrastructure.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Helpers.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Mvc.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Razor.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.DependencyCollector.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.Web.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AI.WindowsServer.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Razor.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Deployment.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Webpages.Razor.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Helpers.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Mvc.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.csprojResolveAssemblyReference.cache
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.csproj.CoreCompileInputs.cache
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\obj\Debug\ojelerfora.pdb
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csc.exe.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csc.rsp
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csi.exe
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csi.exe.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\csi.rsp
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.AppContext.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Console.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Diagnostics.Process.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.IO.Compression.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.IO.FileSystem.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.IO.Pipes.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.AccessControl.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Claims.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Threading.Thread.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.ValueTuple.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Xml.XPath.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\vbc.exe.config
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\roslyn\vbc.rsp
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.SqlServer.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.SqlServerCompact.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.Web.UI.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.Azure.Common.NetFramework.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Newtonsoft.Json.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Data.SqlServerCe.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.Azure.Common.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Hyak.Common.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.SqlServer.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.SqlServerCompact.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\EntityFramework.Web.UI.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Net.Http.Formatting.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Http.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Http.WebHost.dll
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\Newtonsoft.Json.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Net.Http.Formatting.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Http.xml
+D:\Yeni klasör\ojelerfora\Ofora\ojelerfora\ojelerfora\bin\System.Web.Http.WebHost.xml

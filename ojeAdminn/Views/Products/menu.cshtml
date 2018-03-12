@@ -1,0 +1,18 @@
+﻿@model  ojeAdminn.Models.ProductCategoryViewModel
+
+<div class="col-md-2">
+    <label class="control-label"><b>Kategori : </b></label>
+</div>
+
+<div class="col-md-8">
+
+    <select id="basliksec" name="basliksec">
+
+        <option value="-1">Lütfen bir kategori seçiniz.</option>
+        @foreach (var item in Model.categoryy)
+        {
+            <option  @(item.Id == Model.cId? "selected" : " ") value="@item.Id">@item.name</option>
+
+        }
+    </select>
+</div>

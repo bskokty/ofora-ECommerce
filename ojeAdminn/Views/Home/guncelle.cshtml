@@ -1,0 +1,99 @@
+﻿@model oforadata.Data.category
+
+@{
+    ViewBag.Title = "Kategoriler->";
+    ViewBag.altbaslik = @ViewBag.mesaj;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section pageCss{ 
+<style>
+    .sagkenar {
+        margin-top: 8px;
+        float: right;
+    }
+    </style>
+}
+@section pageScripts{
+
+    <script>
+
+
+
+        $(function () {
+
+            setactive(0);
+        });
+ 
+    </script>
+    }
+<p style="font-size:small;color:#dc3545">
+    <i class="fa fa-angle-double-left"></i>@Html.ActionLink("Listeye Dön", "Categories","",new {style= "font-size:small;color:#dc3545" })
+    </p>
+@if (Model == null)
+{
+    <form action="addd" method="post">
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group col-md-10">
+                <div class="col-md-3 ">
+                    <b> @Html.Label("Kategori Adı :", htmlAttributes: new { @class = "control-label sagkenar " })</b>
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control " } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10">
+                <div class="col-md-3 ">
+
+                </div>
+                <div class="col-md-9">
+
+                        <input type="submit" value="Kaydet" class="btn btn-success sagkenar" />
+                   
+                  
+                </div>
+
+            </div>
+        </div>
+    </form>
+}
+else
+{
+    <form action="Guncelle" method="post">
+        <div class="form-horizontal">
+
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.Id)
+
+            <div class="form-group col-md-10">
+                <div class="col-md-3 ">
+                    <b> @Html.Label("Kategori Adı :", htmlAttributes: new { @class = "control-label sagkenar " })</b>
+                </div>
+                <div class="col-md-9">
+                    @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control " } })
+                    @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-md-10">
+                <div class="col-md-3 ">
+
+                </div>
+                <div class="col-md-9">
+                   
+                        <input type="submit" value="Güncelle" class="btn btn-success sagkenar" />
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </form>
+}
